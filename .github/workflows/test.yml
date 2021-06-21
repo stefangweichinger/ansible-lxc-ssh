@@ -43,7 +43,7 @@ jobs:
 
       # check Python syntax
       - name: Python syntax check
-        run: python3 -m py_compile lxc_ssh.py
+        run: python3 -m py_compile plugins/lxc_ssh/lxc_ssh.py
 
 
       # prepare container with LXD installation
