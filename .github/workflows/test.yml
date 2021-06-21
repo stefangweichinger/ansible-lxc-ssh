@@ -272,7 +272,7 @@ jobs:
         run: ansible --version
 
       - name: Install plugin for tests
-        run: cp -af $GITHUB_WORKSPACE/lxc_ssh.py $GITHUB_WORKSPACE/tests/connection_plugins/lxc_ssh.py
+        run: cp -af $GITHUB_WORKSPACE/plugins/lxc_ssh/lxc_ssh.py $GITHUB_WORKSPACE/tests/connection_plugins/lxc_ssh.py
 
       - name: Create empty file for tests
         run: touch $GITHUB_WORKSPACE/tests/test_empty.txt
