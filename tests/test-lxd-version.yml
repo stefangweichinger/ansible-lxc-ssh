@@ -1,8 +1,8 @@
 ---
 
 - name: Store LXD major version
-  command:
-    shell: echo "::set-output name=LXD_Major_Version::$(lxd --version | cut -f1 -d'.')"
+  ansible.builtin.shell: |
+    echo "::set-output name=LXD_Major_Version::$(lxd --version | cut -f1 -d'.')"
   register: command_output
 
 - debug: msg="{{ command_output }}"
