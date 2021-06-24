@@ -10,6 +10,10 @@
     - name: ping VM
       ping:
 
+    - name: Show LXD major version
+      include_tasks:
+        file: "tests-lxd-version.yml"
+
     - name: Test empty file
       include_tasks:
         file: "test-copy-fetch.yml"
