@@ -12,7 +12,7 @@
 
     - name: Show LXD major version
       include_tasks:
-        file: "tests-lxd-version.yml"
+        file: "test-lxd-version.yml"
 
     - name: Test empty file
       include_tasks:
